@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Label, PhotoImage, Tk
 
 import customtkinter
 
@@ -17,6 +17,6 @@ app.title("First App")
 app.geometry("600x350")
 
 button = customtkinter.CTkButton(app, text="My button", command=button_callback)
-button.grid(row=0, column=0, padx=20, pady=20)
+button.pack(pady=80)
 
 app.mainloop()
